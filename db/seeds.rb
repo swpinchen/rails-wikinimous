@@ -12,7 +12,7 @@ Article.destroy_all
 puts 'Deleting all articles...'
 puts 'Seeding new articles!'
 title_no = 0
-5.times.each do
+10.times.each do
   title_no += 1
   new_article = Article.new(title: "Title #{title_no}", content: Faker::ChuckNorris.fact)
   new_article.save
