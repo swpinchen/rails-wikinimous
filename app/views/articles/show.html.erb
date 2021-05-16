@@ -1,4 +1,4 @@
-<h2><%= @article.title %> <%= link_to "edit", edit_article_path(@article) %></h2>
+<h2><%= @article.title %> <%= link_to "Edit", edit_article_path(@article) %> <%= link_to "Delete", @article, method: :delete, remote: true %></h2>
 <p><%= @article.content %></p>
 
 <div>
